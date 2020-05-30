@@ -48,4 +48,24 @@ class User
     validates :name, presence: true
     validates :lastname, presence: true
     validates :email, presence: true
+
+    def is_account_free?
+        self.type_account == Constants::USER_ACCOUNT_TYPE[:free]
+    end
+
+    def is_account_monthly?
+        self.type_account == Constants::USER_ACCOUNT_TYPE[:monthly]
+    end
+
+    def is_account_annual?
+        self.type_account == Constants::USER_ACCOUNT_TYPE[:annual]
+    end
+
+    def is_account_try_period?
+        self.type_account == Constants::USER_ACCOUNT_TYPE[:try_period]
+    end
+
+    def is_admin_account?
+        self.type_account == Constants::USER_ACCOUNT_TYPE[:admin]
+    end
 end

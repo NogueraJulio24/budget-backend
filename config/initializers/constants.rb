@@ -23,7 +23,9 @@ module Constants
     USER_ACCOUNT_TYPE = {
         free: 0,
         monthly: 1,
-        annual: 2
+        annual: 2,
+        try_period: 3,
+        admin: 4
     }
 
     GENDER = {
