@@ -13,11 +13,11 @@ module Constants
     }
 
     ACCOUNT_TYPE = {
-        dinero: 0,
-        ahorro: 1,
-        inversiones: 2,
-        cuenta_corriente: 3,
-        otros: 4
+        money: 0,
+        saving: 1,
+        investments: 2,
+        bank_checking_account: 3,
+        other: 4
     }
 
 end
