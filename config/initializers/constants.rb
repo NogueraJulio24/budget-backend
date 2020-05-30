@@ -20,4 +20,14 @@ module Constants
         other: 4
     }
 
+    USER_ACCOUNT_TYPE = {
+        free: 0,
+        monthly: 1,
+        annual: 2
+    }
+
+    GENDER = {
+        male: 0,
+        fame: 1
+    }
 end
