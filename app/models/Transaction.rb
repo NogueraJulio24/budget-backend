@@ -9,6 +9,8 @@ class Transaction
     field :date, type: DateTime
     field :description, type: String
 
+    belongs_to :account
+
     as_enum :type_transaction, Constants::TRANSACTION_TYPE
 
     #Account

@@ -10,6 +10,8 @@ class Account
     validates :name, presence: true
     validates :amount, presence: true
     
+    has_many :transactions
+    
     as_enum :type_transaction, Constants::ACCOUNT_TYPE
     
     # Una cuenta tiene vaias transacciones
