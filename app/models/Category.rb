@@ -11,7 +11,7 @@ class Category
 
     as_enum :type_transaction, Constants::CATEGORY_TYPE
 
-    
+    #validate    
     def is_expense?
         self.type_transaction == Constants::CATEGORY_TYPE[:expense]
     end
