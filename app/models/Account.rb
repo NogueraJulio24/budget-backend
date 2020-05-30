@@ -6,6 +6,9 @@ class Account
     field :name, type: String
     field :amount, type: Float
     field :active, type: Boolean, default: true
+
+    validates :name, presence: true
+    validates :amount, presence: true
     
     as_enum :type_transaction, Constants::ACCOUNT_TYPE
     
