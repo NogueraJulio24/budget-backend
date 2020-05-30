@@ -6,6 +6,7 @@ class Account
     field :name, type: String
     field :amount, type: Float
     field :active, type: Boolean, default: true
+    field :currency, type: String
 
     validates :name, presence: true
     validates :amount, presence: true
