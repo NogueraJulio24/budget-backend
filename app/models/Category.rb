@@ -11,6 +11,8 @@ class Category
 
     as_enum :type_transaction, Constants::CATEGORY_TYPE
 
+    has_one :subcategory
+
     #validate
     validates :name, presence: true
     validates :color, presence: true
