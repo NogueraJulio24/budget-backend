@@ -32,8 +32,11 @@
   </div>
 
   <div class="field">
-    <%= form.label :type_transaction_cd %>
-    <%= form.select :type_transaction, options_from_collection_for_select(Constants::TRANSACTION_TYPE, :last, :first, form.object.type_transaction), {include_blank: 'Seleccionar'} %>
+    <%= form.label :type_transaction %>
+
+    <% byebug %>
+
+    <%= form.select :type_transaction, Constants::TRANSACTION_TYPE, {:include_blank => true} %>
   </div>
 
   <div class="actions">

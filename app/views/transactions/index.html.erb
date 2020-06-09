@@ -8,6 +8,7 @@
       <th>Amount</th>
       <th>Observation</th>
       <th>Date</th>
+      <th>Type Transaction</th>
       <th>Description</th>
       <th colspan="3"></th>
     </tr>
@@ -20,6 +21,7 @@
         <td><%= transaction.observation %></td>
         <td><%= transaction.date %></td>
         <td><%= transaction.description %></td>
+        <td><%= transaction.type_transaction %></td>
         <td><%= link_to 'Show', transaction %></td>
         <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
         <td><%= link_to 'Destroy', transaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
